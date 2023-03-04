@@ -1,5 +1,5 @@
-"proxy": "http://localhost:8081",
-"proxy": "http://3.37.27.133:8081",
+"proxy": "http://localhost:8080",
+"proxy": "http://3.37.27.133:8080",
 
 { 터미널 }
 npx create - react - app 프로젝트명    리액트 웹 앱 생성
