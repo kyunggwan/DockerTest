@@ -14,6 +14,7 @@ import { getOilList } from './store'
 import Carcondition from "./components/Carcondition ";
 
 function App() {
+  axios.defaults.baseURL = 'http://3.37.27.133:8080';
   let dispatch = useDispatch();
   useEffect(() => {
     (async () =>
