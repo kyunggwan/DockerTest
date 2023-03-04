@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://3.37.27.133/:8081",
+  "proxy": "http://3.37.27.133/:8080",
   "eslintConfig": {
     "extends": [
       "react-app",
