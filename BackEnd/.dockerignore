@@ -1,0 +1,12 @@
+.git
+.gitignore
+.dockerignore
+dockerfile
+*.md
+*.sh
+*.yml
+scripts
+
+**/*.class
+
+Project-login
