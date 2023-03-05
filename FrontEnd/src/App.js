@@ -5,7 +5,7 @@ import Main from "./routes/Main";
 import Page1 from "./routes/Page1";
 import Page2 from "./routes/Page2";
 import axios from "axios";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getGpsList } from './store'
 import { getDriveList } from './store'
@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     (async () =>
       await axios
-        .get("/simul")
+        .get("http://3.37.27.133:8080/simul")
         .then((result) => {
           dispatch(getGpsList(result.data));
         })
@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     (async () =>
       await axios
-        .get("/vehicle")
+        .get("http://3.37.27.133:8080/vehicle")
         .then((result) => {
           dispatch(getVehicleList(result.data));
         })
@@ -37,7 +37,7 @@ function App() {
   useEffect(() => {
     (async () =>
       await axios
-        .get("/drive")
+        .get("http://3.37.27.133:8080/drive")
         .then((result) => {
           dispatch(getDriveList(result.data));
         })
@@ -46,7 +46,7 @@ function App() {
   useEffect(() => {
     (async () =>
       await axios
-        .get("/oil")
+        .get("http://3.37.27.133:8080/oil")
         .then((result) => {
           dispatch(getOilList(result.data));
         })

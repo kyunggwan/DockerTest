@@ -7,7 +7,7 @@ function Allchart() {
 
     const data = [{
         "id": 2612,
-        "data": drive.filter((a) => a.car_num == 2612).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 2612).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -17,7 +17,7 @@ function Allchart() {
     },
     {
         "id": 3897,
-        "data": drive.filter((a) => a.car_num == 3897).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 3897).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -27,7 +27,7 @@ function Allchart() {
     },
     {
         "id": 9582,
-        "data": drive.filter((a) => a.car_num == 9582).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 9582).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -37,7 +37,7 @@ function Allchart() {
     },
     {
         "id": 4699,
-        "data": drive.filter((a) => a.car_num == 4699).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 4699).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -47,7 +47,7 @@ function Allchart() {
     },
     {
         "id": 4985,
-        "data": drive.filter((a) => a.car_num == 4985).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 4985).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -57,7 +57,7 @@ function Allchart() {
     },
     {
         "id": 5221,
-        "data": drive.filter((a) => a.car_num == 5221).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 5221).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -67,7 +67,7 @@ function Allchart() {
     },
     {
         "id": 5634,
-        "data": drive.filter((a) => a.car_num == 5634).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 5634).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -77,7 +77,7 @@ function Allchart() {
     },
     {
         "id": 8993,
-        "data": drive.filter((a) => a.car_num == 8993).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 8993).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -87,7 +87,7 @@ function Allchart() {
     },
     {
         "id": 9007,
-        "data": drive.filter((a) => a.car_num == 9007).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 9007).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,
@@ -97,7 +97,7 @@ function Allchart() {
     },
     {
         "id": 9357,
-        "data": drive.filter((a) => a.car_num == 9357).map((a, i) => {
+        "data": drive.filter((a) => a.car_num === 9357).map((a, i) => {
             return {
                 key: i,
                 "x": a.date,

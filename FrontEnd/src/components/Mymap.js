@@ -256,10 +256,10 @@ function Mymap() {
             <input type="checkbox" className="btn-check" id="btn-check" checked={isRunning} onChange={handleIsRunningChange} />
 
             {
-                cnt != 0 && cnt <= gps.length ? <h4 style={{ textAlign: 'center' }}>모의주행 {(cnt / gps.length * 100).toFixed(1)}% 진행중</h4> : null
+                cnt !== 0 && cnt <= gps.length ? <h4 style={{ textAlign: 'center' }}>모의주행 {(cnt / gps.length * 100).toFixed(1)}% 진행중</h4> : null
             }
             {
-                cnt != 0 && cnt <= gps.length ? <ProgressBar className="progress" variant="success" now={(cnt / gps.length) * 100} /> : null
+                cnt !== 0 && cnt <= gps.length ? <ProgressBar className="progress" variant="success" now={(cnt / gps.length) * 100} /> : null
             }
             <div
                 id="map"

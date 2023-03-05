@@ -42,7 +42,7 @@ function Carcondition() {
     let listsafety = users.map((a, i) =>
         a
     )
-    let listoil = oil.filter((a) => a.car_num == id)
+    let listoil = oil.filter((a) => a.car_num === id)
         .map((a, i) =>
             a
         )

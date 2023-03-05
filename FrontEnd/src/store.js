@@ -1,11 +1,11 @@
-import { configureStore, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 let drive = createSlice({
     name: 'drive',
     initialState: [],
     reducers: {
         getDriveList(state, action) {
-            if (state.length == 0) {
+            if (state.length === 0) {
                 state = action.payload;
                 return state
             }
@@ -18,7 +18,7 @@ let vehicle = createSlice({
     initialState: [],
     reducers: {
         getVehicleList(state, action) {
-            if (state.length == 0) {
+            if (state.length === 0) {
                 state = action.payload;
                 return state
             }
@@ -31,7 +31,7 @@ let gps = createSlice({
     initialState: [],
     reducers: {
         getGpsList(state, action) {
-            if (state.length == 0) {
+            if (state.length === 0) {
                 state = action.payload;
                 return state
             }
@@ -44,7 +44,7 @@ let oil = createSlice({
     initialState: [],
     reducers: {
         getOilList(state, action) {
-            if (state.length == 0) {
+            if (state.length === 0) {
                 state = action.payload;
                 return state
             }
