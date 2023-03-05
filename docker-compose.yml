@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  react:
+    container_name: react
+    image: 'upcoderk/react-image'
+    build:
+      context: FrontEnd
+      dockerfile: dockerfile
+    ports:
+      - 3000:3000
+
+  spring:
+    container_name: spring
+    image: 'upcoderk/myapp'
+    build:
+      context: BackEnd
+      dockerfile: dockerfile
+    ports:
+      - 8080:8080
